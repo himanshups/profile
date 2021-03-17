@@ -1,0 +1,98 @@
+<!-- Himanshu Sharma -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page </title>
+        <style>
+            body {
+    margin:0;
+    padding:0;
+    background:url(""); 
+    background-repeat:no-repeat ;
+    height:100vh;
+    background-size:cover;
+}
+.box{
+    top:25%;
+    left:25%;
+   position:absolute ;
+   transform:translate (-50%,-50%);
+   background-color:rgba(0,0,0,.7);
+   width:300px;
+   padding:40px;
+   border-radius:10px;
+   box-shadow:0 15px 20px rgba(0,0,0,0.6);
+   box-sizing:border-box;
+}
+.box h4{
+    margin:0 0 30px;
+    padding:0;
+    color:white;
+    font-size:25px;
+    color:lightgreen;
+    text-align:center;
+}
+.inputbox{
+    position:relative ;
+    
+}
+.inputbox input{
+    padding:10px 0;
+    color:white;
+    width:100%;
+    font-size:17px;
+    border:none;
+    background:transparent ;
+    border-bottom:1px solid white ;
+    outline:none;
+}
+.inputbox label {
+    position:absolute ;
+    top:0;
+    left:0;
+    padding:10px 0;
+    color:white;
+    font-size:18px;
+    transition:.5s;
+    pointer-events:none;
+}
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label
+{
+    top:-18px;
+    left:0;
+    color:#03a9f4;
+    font-size:12px;
+}
+.box .inputbox button{
+    width:100%;
+    padding:5px;
+    background-color:#03a9f4;
+    border:none;
+    
+    border-radius:5px;
+}
+.box .inputbox button:hover{
+    background-color:lightgreen;
+}
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <form action="profile.html">
+                <h4>Login Page </h4>
+                <div class="inputbox">
+                    <input type="text" name="text" required>
+                    <label>Username</label><br /><br />
+                     </div>
+                 <div class="inputbox">
+                    <input type="password" name="text" required>
+                    <label>Password</label>
+                    <br /><br /><br />
+                <button>Login</button>
+                    
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <title>My Responsive Portfolio Website </title>
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    font-family:Poppins;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items : center ;
+    background:#16384c;
+}
+h1{color:white;
+text-align:center;
+display : flex;
+flex-direction:column;}
+.container{
+    position:relative;
+    width:1100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:30px;
+}
+.container .card {
+    position:relative ;
+    max-width:300px;
+    height:215px;
+    background:#fff;
+    margin:30px 10px;
+    padding:20px 15px;
+    display:flex;
+    flex-direction:column;
+    box-shadow:0 5px 202px rgba(0,0,0,0.5) ;
+    transition:0.3s ease-in-out;
+}
+.container .card:hover{
+     height:420px;
+}
+.container .card .imgBx{
+    position:relative ;
+    width:260px;
+   
+    top:-60px;
+    left:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgBx img{
+    max-width:100%;
+    border-radius : 4px ;
+}
+.container .card .content{
+    position:relative ;
+    margin-top:-140px;
+    padding:10px 15px;
+    text-align:center;
+    color:#111;
+    visibility:hidden ;
+    opacity:0;
+    transition:0.3s ease-in-out;
+}
+.container .card:hover .content{
+    visibility:visible;
+    opacity:1;
+    margin-top:-40px;
+    transition-delay: 0.3s;}
+button{
+   margin :20px;
+    background:#0e76a8;
+    padding:10px;
+    border-radius:5px;
+    color:white;
+    outline:none;
+    font-size:20px
+   
+}
+button:hover{
+ background:white;
+ color:#0e76a8;
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        
+            <div class="card">
+            
+                <div class="imgBx"><img src="https://media.giphy.com/media/l1J9tyaPJ5Xf4ltzq/giphy.gif"></div>  
+                   <div class="content">
+                       <h2>Himanshu Sharma </h2>
+                       <p> I am<b> Front  Web developer </b>have created basic html and javascript projects like<b> Contact Form</b> ,<b> Card Hover Effects</b> ,<b> Button Effects</b> ,<b> Javascripts effects</b> and many more ..... </p>
+                       <a href="https://www.linkedin.com/in/himanshu-sharma-763a85195" style="text-decoration:none;"><button> Linkedin Profile</button> </a>
+                   </div>  
+            </div>
+        </div>
+    </body>
+</html>
